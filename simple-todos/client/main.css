@@ -112,7 +112,7 @@ header .hide-completed {
 
 form.new-task{
   outline:1px solid black;
-  animation: pulseAnim 1s infinite;
+  animation: pulseAnim 1s ease infinite;
   opacity: 1;
 }
 
@@ -123,8 +123,10 @@ form.new-task input{
 }
 
 @keyframes pulseAnim {
-  0% { opacity: 1; }
-  50% { opacity: 0.56; }
+  00% { opacity: 1; }
+  25% { opacity: 0.900; }
+  50% { opacity: 0.780; }
+  75% { opacity: 0.900;}
   100% { opacity: 1; }
 }
 
