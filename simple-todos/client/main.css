@@ -110,6 +110,24 @@ header .hide-completed {
   margin-left: 5px;
 }
 
+form.new-task{
+  outline:1px solid black;
+  animation: pulseAnim 1s infinite;
+  opacity: 1;
+}
+
+form.new-task input{
+  letter-spacing: 2px;
+  opacity: 1;
+  padding-left: 4px;
+}
+
+@keyframes pulseAnim {
+  0% { opacity: 1; }
+  50% { opacity: 0.56; }
+  100% { opacity: 1; }
+}
+
 @media (max-width: 600px) {
   li {
     padding: 12px 15px;
