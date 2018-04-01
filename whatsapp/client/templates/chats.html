@@ -1,4 +1,4 @@
-
+<template name="Chats">
 <ion-view view-title="Chats">
   <ion-content>
     <ion-list>
@@ -9,7 +9,6 @@
         <h2>{{ chat.name }}</h2>
         <p>{{ chat.lastMessage.text }}</p>
         <span class="last-message-timestamp">{{ chat.lastMessage.timestamp | calendar }}</span>
-        <span class="last-message-timestamp">{{ chat.lastMessage.timestamp }}</span>
         <i class="icon ion-chevron-right icon-accessory"></i>
         <ion-option-button class="button-assertive" ng-click="chats.remove(chat)">
           Delete
@@ -18,3 +17,4 @@
     </ion-list>
   </ion-content>
 </ion-view>
+</template>
